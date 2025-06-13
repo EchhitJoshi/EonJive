@@ -1,0 +1,21 @@
+Transaction ID,Merchant Delivery ID,Timestamp Local Date,Payout Date,Store Name,Store ID,Store Address,Business ID,Merchant Store ID,Error Charge,Adjustment,Transaction Type,Description
+2402923365,20e2937d-d663-3001-b6c7-a06475403c0d,2025-04-27,2025-05-01,Pizza Palace (Reisterstown),787703,"11801 Reisterstown Rd, Reisterstown, MD 21136, USA",252381,NULL,14.71,0.00,ERROR_CHARGE,1 Chef Salad food quality
+2388424629,ac1a1347-7437-3001-ba72-e175dd170c0d,2025-04-13,2025-04-17,Pizza Palace (Reisterstown),787703,"11801 Reisterstown Rd, Reisterstown, MD 21136, USA",252381,NULL,24.38,0.00,ERROR_CHARGE,"Order Received Time: 2025-04-13 21:03:52.832890000
+Order Pickup Time: 2025-04-13 22:11:22.000000000"
+2381452340,fefb271f-c9b0-3001-8191-025184744f76,2025-04-07,2025-04-11,Pizza Palace (Reisterstown),787703,"11801 Reisterstown Rd, Reisterstown, MD 21136, USA",252381,NULL,27.24,0.00,ERROR_CHARGE,"Order Received Time: 2025-04-07 19:50:48.278539000
+Order Pickup Time: 2025-04-07 20:56:59.499000000"
+2380093802,3a41a767-3875-3001-8676-b7c5d719310a,2025-04-06,2025-04-10,Pizza Palace (Reisterstown),787703,"11801 Reisterstown Rd, Reisterstown, MD 21136, USA",252381,NULL,14.89,0.00,ERROR_CHARGE,"Order Received Time: 2025-04-06 21:24:40.231948000
+Order Pickup Time: 2025-04-06 22:29:31.000000000"
+2275274977,4a540748-b271-3001-9879-e5ca0adba762,2025-01-06,2025-01-10,Pizza Palace (Reisterstown),787703,"11801 Reisterstown Rd, Reisterstown, MD 21136, USA",252381,NULL,23.07,0.00,ERROR_CHARGE,"Order Received Time: 2025-01-06 21:06:30.540302000
+Order Pickup Time: 2025-01-06 22:31:14.000000000"
+2275267543,c494c541-2a4b-3001-92b3-d482ec4c4bf3,2025-01-06,2025-01-10,Pizza Palace (Reisterstown),787703,"11801 Reisterstown Rd, Reisterstown, MD 21136, USA",252381,NULL,13.15,0.00,ERROR_CHARGE,"Order Received Time: 2025-01-06 21:01:58.485645000
+Order Pickup Time: 2025-01-06 22:29:06.000000000"
+2275262289,baf36451-578b-3001-9728-8052de873013,2025-01-06,2025-01-10,Pizza Palace (Reisterstown),787703,"11801 Reisterstown Rd, Reisterstown, MD 21136, USA",252381,NULL,17.97,0.00,ERROR_CHARGE,"Order Received Time: 2025-01-06 20:49:07.382122000
+Order Pickup Time: 2025-01-06 22:02:31.000000000"
+2275250577,32306904-c3f8-3001-a157-8221d63921f7,2025-01-06,2025-01-10,Pizza Palace (Reisterstown),787703,"11801 Reisterstown Rd, Reisterstown, MD 21136, USA",252381,NULL,22.69,0.00,ERROR_CHARGE,"Order Received Time: 2025-01-06 20:48:39.783137000
+Order Pickup Time: 2025-01-06 22:09:22.000000000"
+2273211133,caaab06f-4173-3001-a4f0-e4b48bdadb4e,2025-01-04,2025-01-08,Pizza Palace (Reisterstown),787703,"11801 Reisterstown Rd, Reisterstown, MD 21136, USA",252381,NULL,5.00,0.00,ERROR_CHARGE,1 6 WHOLE WINGS  food quality
+2262867089,cf8a90d0-c214-3001-8824-dc78dc2cfbe1,2024-12-26,2024-12-30,Pizza Palace (Reisterstown),787703,"11801 Reisterstown Rd, Reisterstown, MD 21136, USA",252381,NULL,17.67,0.00,ERROR_CHARGE,"Order Received Time: 2024-12-26 12:32:15.319348000
+Order Pickup Time: 2024-12-26 13:42:51.486000000"
+2252050152,1903a020-7f97-3001-8290-6d425fb85e71,2024-12-15,2024-12-19,Pizza Palace (Reisterstown),787703,"11801 Reisterstown Rd, Reisterstown, MD 21136, USA",252381,NULL,3.68,0.00,ERROR_CHARGE,1 Italian Spaghetti missing
+2250967045,d704a5c1-006f-3001-80e0-d7826556d46f,2024-12-14,2024-12-18,Pizza Palace (Reisterstown),787703,"11801 Reisterstown Rd, Reisterstown, MD 21136, USA",252381,NULL,16.84,0.00,ERROR_CHARGE,"1 Seafood Subs 8"" (Half) missing"
