@@ -9,15 +9,21 @@ from models import *
 
 import arviz as az
 import pymc as pm
-
+import yaml
 
 
 #Configs
 px.defaults.template = "plotly_dark"
 
 
+with open("config.yaml","r") as file:
+    config = yaml.safe_load(file)
+
+home_path = config['LOCAL_HOME_PATH']
+
+
 #Data Reads
-df = pd.read_csv('/Users/echhitjoshi/Library/Mobile Documents/com~apple~CloudDocs/Work/EonJive/data/cleaned_data/pos_dd.csv')
+df = pd.read_csv(home_path + '/data/cleaned_data/pos_dd.csv')
 df.columns = [col.replace("_e","") for col in df.columns]
 df['source'] = np.where(df['source'] == 'dd','DoorDash',df['source'])
 

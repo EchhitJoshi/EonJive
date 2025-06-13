@@ -1,0 +1,6 @@
+LOCAL_HOME_PATH : /Users/echhitjoshi/Library/Mobile Documents/com~apple~CloudDocs/Work/EonJive
+MODEL_PATH : ~/EonJive/models/
+DATA_PATH : ~/EonJive_streamlit/data/
+
+APP_IP : 0.0.0.0
+APP_PORT : 8050

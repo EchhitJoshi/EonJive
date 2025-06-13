@@ -9,10 +9,17 @@ import pytensor
 from datetime import datetime, timedelta
 import os
 import glob
+import yaml
 
 # Configs
 #os.chdir("/Users/echhitjoshi/Library/Mobile Documents/com~apple~CloudDocs/Work/EonJive")
-pytensor.config.cxx = '/usr/bin/clang++'
+if os.uname().machine.lower() == "arm64":
+    pytensor.config.cxx = '/usr/bin/clang++'
+
+with open("config.yaml","r") as file:
+    config = yaml.safe_load(file)
+
+home_path = config['LOCAL_HOME_PATH']
 
 
 def daywise_expected_total_sales_model(dat, date_col,target_col:str,sample:bool = True):
@@ -61,7 +68,7 @@ def daywise_expected_total_sales_model(dat, date_col,target_col:str,sample:bool 
         #sample
         if sample:
             trace = pm.sample(draws = 1000, tune = 300,chains = 4,return_inferencedata = True)
-            az.to_netcdf(trace, f"/Users/echhitjoshi/Library/Mobile Documents/com~apple~CloudDocs/Work/EonJive/models/sales_model_trace_{datetime.now().strftime("%Y_%m_%d_%H_%M")}.nc")
+            az.to_netcdf(trace, home_path + f"/models/sales_model_trace_{datetime.now().strftime("%Y_%m_%d_%H_%M")}.nc")
             return model, trace, coords
             
         else:
@@ -75,7 +82,7 @@ def plot_trace(trace):
     plt.show()
 
 
-def load_latest_model(directory = '/Users/echhitjoshi/Library/Mobile Documents/com~apple~CloudDocs/Work/EonJive/models', pattern = '*'):
+def load_latest_model(directory = home_path + '/models', pattern = '*'):
     files = glob.glob(os.path.join(directory,pattern))
     print("Reading from ",files)
     if not files:
@@ -85,7 +92,7 @@ def load_latest_model(directory = '/Users/echhitjoshi/Library/Mobile Documents/c
     trace = az.from_netcdf(latest_file)
     return trace
 
-def load_last_model(filepath = '/Users/echhitjoshi/Library/Mobile Documents/com~apple~CloudDocs/Work/EonJive/models/'):
+def load_last_model(filepath = home_path + '/models/'):
     models = os.listdir(filepath)
     models.sort(reverse = True)
     trace = az.from_netcdf(filepath + models[0])
